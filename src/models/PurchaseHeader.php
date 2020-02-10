@@ -17,6 +17,7 @@ class PurchaseHeader extends Model
 		'perceptions',
 		'taxes',
 		'total',
+		'comments',
 		'project_id',
 		'is_canceled',
 	];

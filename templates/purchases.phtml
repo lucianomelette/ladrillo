@@ -116,8 +116,18 @@
 										</div>
 									</div>
 								</div>
-								
+
 								<hr />
+								<div class="row mt-2">
+									<div class="col-lg-6 col-md-12">
+										<div class="form-group">
+											<label class="font-weight-bold">Observaciones:</label>
+											<br>
+											<input type="text" class="form-control" name="doc-comments" />
+										</div>
+									</div>
+								</div>
+								
 								<div class="row mt-2">
 									<div class="col-lg-2 col-md-3">
 										<div class="form-group">
@@ -657,6 +667,7 @@
 							perceptions : 			parseFloat($('input[name="doc-perceptions"]').val()),
 							taxes :		 			parseFloat($('input[name="doc-taxes"]').val()),
 							total : 				parseFloat($('input[name="doc-total"]').val()),
+							comments : 				$('input[name="doc-comments"]').val(),
 							detail :				detailData,
 						};
 						
@@ -738,7 +749,8 @@
 					$('input[name="doc-number"]').val("0000-00000000");
 					
 					getDetailTableBody().empty();
-					
+
+					$('input[name="doc-comments"]').val("");
 					$('input[name="doc-subtotal"]').val(0);
 					$('input[name="doc-perceptions"]').val(0);
 					$('input[name="doc-taxes"]').val(0);
