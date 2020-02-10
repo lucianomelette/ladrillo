@@ -4,7 +4,7 @@
 		Yo Ladrillo
 	</a>
 	
-	<?php if (isset($username_session) or isset($project_session) or isset($company_session)) : ?>
+	<?php if (isset($user_display_name) or isset($project_session) or isset($company_session)) : ?>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -13,7 +13,7 @@
 		
 		<ul class="navbar-nav mr-auto">
 		
-			<?php if (isset($username_session) and isset($project_session) and isset($company_session)) : ?>
+			<?php if (isset($user_display_name) and isset($project_session) and isset($company_session)) : ?>
 			<li class="nav-item dropdown active">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<i class="fa fa-file-alt"></i> Archivos
@@ -87,7 +87,7 @@
 			
 		</ul>
 		
-		<?php if (isset($username_session) or isset($project_session) or isset($company_session)) : ?>
+		<?php if (isset($user_display_name) or isset($project_session) or isset($company_session)) : ?>
 		<form class="form-inline my-2 my-lg-0 mr-3">
 			<ul class="navbar-nav mr-auto">
 				
@@ -116,10 +116,10 @@
 				</li>
 				<?php endif; ?>
 				
-				<?php if (isset($username_session)) : ?>
+				<?php if (isset($user_display_name)) : ?>
 				<li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-user-check"></i> <?= $username_session ?>
+						<i class="fa fa-user-check"></i> <?= $user_display_name ?>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#"><i class="fa fa-edit"></i> Editar perfil</a>
