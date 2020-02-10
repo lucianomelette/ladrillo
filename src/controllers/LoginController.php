@@ -66,6 +66,7 @@ class LoginController extends Controller
 		$args = [
 			"navbar" => [
 				"username_session" => $_SESSION["user_session"]->username,
+				"user_display_name" => $_SESSION["user_session"]->display_name,
 			],
 			"companies" => $companies,
 		];
@@ -94,6 +95,7 @@ class LoginController extends Controller
 		$args = [
 			"navbar" => [
 				"username_session" 	=> $_SESSION["user_session"]->username,
+				"user_display_name" => $_SESSION["user_session"]->display_name,
 				"company_session" 	=> $_SESSION["company_session"]->business_name,
 			],
 			"projects" => $projects,

@@ -22,6 +22,7 @@ class SalesReportsController extends Controller
 		$args = [
 			"navbar" => [
 				"username_session" 	=> $_SESSION["user_session"]->username,
+				"user_display_name" => $_SESSION["user_session"]->display_name,
 				"project_session" 	=> $project->full_name,
 				"company_session" 	=> $company->business_name,
 			],
@@ -253,6 +254,7 @@ class SalesReportsController extends Controller
 	    $args = [
 			"navbar" => [
 				"username_session" 	=> $_SESSION["user_session"]->username,
+				"user_display_name" => $_SESSION["user_session"]->display_name,
 				"project_session" 	=> $project->full_name,
 				"company_session" 	=> $company->business_name,
 			],

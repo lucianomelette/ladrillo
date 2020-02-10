@@ -10,6 +10,7 @@ class User extends Model
 	protected $fillable = [
 		'id',
 		'username',
+		'display_name',
 		'password'
 	];
 	
