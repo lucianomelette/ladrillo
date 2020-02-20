@@ -59,6 +59,7 @@
 							title: 'Fecha',
 							width: '30%',
 							type: 'date',
+							displayFormat: 'dd/mm/yy',
 							display: function(data) {
 								US_Date = new Date(data.record.dated_at);
 								US_Date.setHours(US_Date.getHours() + 3); // AR_Date
