@@ -60,7 +60,9 @@
 							width: '30%',
 							type: 'date',
 							display: function(data) {
-								return new Date(data.record.dated_at).toLocaleDateString();
+								US_Date = new Date(data.record.dated_at);
+								US_Date.setHours(usDate.getHours() + 3); // AR_Date
+								return US_Date.toLocaleDateString();
 							},
 							inputClass: 'form-control',
 						},
