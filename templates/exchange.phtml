@@ -59,7 +59,7 @@
 							title: 'Fecha',
 							width: '30%',
 							display: fuction(data) {
-								return new Date().toLocaleDate(data.dated_at);
+								return new Date().toLocaleDateString(data.record.dated_at);
 							},
 							inputClass: 'form-control',
 						},
