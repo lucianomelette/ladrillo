@@ -58,7 +58,9 @@
 						dated_at: {
 							title: 'Fecha',
 							width: '30%',
-							type: 'date',
+							display: fuction(data) {
+								return new Date().toLocaleDate(data.dated_at);
+							},
 							inputClass: 'form-control',
 						},
 						currency_code: {
