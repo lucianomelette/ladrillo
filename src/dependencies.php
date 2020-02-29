@@ -114,44 +114,9 @@ $container['ProductsController'] = function ($container) {
 	return new \App\Controllers\ProductsController($container);
 };
 
-// tournaments controller
-$container['TournamentsController'] = function ($container) {
-	return new \App\Controllers\TournamentsController($container);
-};
-
-// tournaments categories controller
-$container['TournamentsCategoriesController'] = function ($container) {
-	return new \App\Controllers\TournamentsCategoriesController($container);
-};
-
-// enrollments controller
-$container['EnrollmentsController'] = function ($container) {
-	return new \App\Controllers\EnrollmentsController($container);
-};
-
-// matches controller
-$container['MatchesController'] = function ($container) {
-	return new \App\Controllers\MatchesController($container);
-};
-
-// gallery controller
-$container['GalleryController'] = function ($container) {
-	return new \App\Controllers\GalleryController($container);
-};
-
-// rankings controller
-$container['RankingsController'] = function ($container) {
-	return new \App\Controllers\RankingsController($container);
-};
-
-// scheduler controller
-$container['SchedulerController'] = function ($container) {
-	return new \App\Controllers\SchedulerController($container);
-};
-
-// courts controller
-$container['CourtsController'] = function ($container) {
-	return new \App\Controllers\CourtsController($container);
+// investors controller
+$container['InvestorsController'] = function ($container) {
+	return new \App\Controllers\InvestorsController($container);
 };
 
 // api controller

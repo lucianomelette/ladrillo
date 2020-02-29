@@ -22,6 +22,11 @@ class Company extends Model
     {
         return $this->hasMany('App\Models\Supplier');
     }
+
+    public function investors()
+    {
+        return $this->hasMany('App\Models\Investor');
+    }
 	
 	public function products()
     {

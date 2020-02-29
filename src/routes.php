@@ -155,3 +155,13 @@ $app->group('/products', function() {
 	$this->get('', 'ProductsController');
 	$this->post('/{action}', 'ProductsController:action');
 })->add($appAuth)->add($sessionAuth)->add($hostAuth);
+
+// ******************* //
+// **  INVESTMENTS  ** //
+// ******************* //
+
+// investors
+$app->group('/investors', function() {
+	$this->get('', 'InvestorsController')->setName('investors');
+	$this->post('/{action}[/{investor_id}]', 'InvestorsController:action');
+})->add($appAuth)->add($sessionAuth)->add($hostAuth);
